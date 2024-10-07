@@ -79,12 +79,11 @@ const Dashboard: React.FC = () => {
                 console.error("Unexpected error:", error);
             }
         }
-    };
+    }
 
     useEffect(() => {
         fetchWorkflows();
         fetchUserCount();
-        
     }, []);
 
     const allRuns = workflows.flatMap(workflow =>
